@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" href = "reset.css">
+    <link rel = "stylesheet" href = "style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <title>CONVIVA - Inserir</title>
+    <style>
+        form{
+            background-color: white;
+            width: 500px;
+            height: 500px;
+            border-radius: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            padding: 20px;
+        }
+        input{
+            width: 250px;
+            height: 30px;
+            border-radius: 5px;
+            text-align: center;
+            border: solid 2px #DF2935;
+            margin-left: 10px;
+        }
+        label{
+            font-size: 22px;
+        }
+        h1{
+            font-size: 25px;
+            font-weight: bold;
+            border-bottom: 3px #FDCA40 solid;
+            padding-bottom: 10px;
+        }
+        input[type=submit]{
+            background-color: #DF2935;
+            color: white;
+            font-weight: bold;
+            height: 40px;
+        }
+        input[type=submit]:hover{
+            background-color: #ca2833;
+            cursor: pointer;
+            
+        }
+    </style>
+</head>
+<body>
+    <form action = "deletar.php" method = "POST">
+        <h1>Informe o lote da vacina a ser deletada:</h1>
+        <label for = "lote">Lote
+            <input type = "text" id="lote" name = "lote">
+        </label>
+        <input type = "submit">
+    </form>
+</body>
+</html>
