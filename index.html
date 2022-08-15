@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" href = "reset.css">
+    <link rel = "stylesheet" href = "style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <title>CONVIVA</title>
+    <style>
+        main{
+            background-color: rgb(255, 255, 255);
+            width: 500px;
+            height: 500px;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+            justify-content: space-around;
+        }
+        .container{
+            display: flex;
+            align-self: flex-end;
+            width: 400px;
+            height: 400px;
+        }
+        h1{
+            font-weight: bold;
+        }
+        h1:first-child{
+            font-size: 25px;
+            border-bottom: 3px #FDCA40 solid;
+            padding-bottom: 15px;
+        }
+        a > div{
+            background-color: #DF2935;
+            font-weight: bold;
+            height: 50px;
+            width: 200px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 10px;
+        }
+        a > div:hover{
+            background-color: #ca2833;
+            cursor: pointer;
+        }
+        a{
+            color: white;
+            text-decoration: none;
+        }
+
+    </style>
+</head>
+<body>
+    <div class = "container">
+        <img src = "Ze-gotinha.png" alt = "imagem Zé Gotinha">
+    </div>
+    
+    <main>
+        <h1>Bem Vindo ao CONVIVA</h1>
+        <h1>Selecione uma opção</h1>
+        <a href = "inserir.html"><div>Inserir</div></a>
+        <a href = "visualizar.php"><div>Visualizar</div></a>
+        <a href = "deletar.html"><div>Deletar</div></a>
+    </main>
+</body>
+</html>
